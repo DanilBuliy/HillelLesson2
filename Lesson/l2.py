@@ -6,3 +6,5 @@ print(onestr)
 twostr=mainstr[::-1].upper()
 print(twostr)
 
+
+
