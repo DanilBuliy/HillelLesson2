@@ -35,8 +35,8 @@ print("id of c=",id(c))
 print("Одинаковые данные->",a == b == c)
 print("Одинаковые адреса->",a is b is c)
 #3.2 а у 2-х последних стали одинаковые id и остались одинаковые данные (и одинаковый тип).
-a1=tuple(a1)
-b1=a1
+a1=bool(a1)
+b1=bool(b1)
 print("Строка а1=",a1,type(a1))
 print("Строка b1=",b1,type(b1))
 print("id of a1=",id(a1),type(a1))
