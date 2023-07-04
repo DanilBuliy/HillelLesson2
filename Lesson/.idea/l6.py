@@ -13,8 +13,8 @@ while True:
 sum=0
 n=int(n)
 for i in range(1,n+1):
-    i=i**3
-    sum+=i
+    if i % 3 != 0:
+        sum+=i ** 3
 print("sum of cubs=",sum)
 
 
@@ -24,8 +24,8 @@ sum=0
 b=0
 i = 1
 while i <= n:
-    b = i ** 3
-    sum += b
+    if i%3!=0:
+        sum += i**3
     i += 1
 print("sum через вайл=",sum)
 
