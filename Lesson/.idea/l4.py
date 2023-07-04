@@ -23,5 +23,6 @@ print(stroka, formatted1, formatted2, formatted3,sep="<<<>>>")
 file = open("hillel.txt", "w", encoding="utf-8")
 print(stroka, formatted1, formatted2, formatted3,sep="<<<>>>",file=file)
 file.close()
-
-
+file2 = open("hillel.txt", "r", encoding="utf-8")
+print(file2.readlines())
+file2.close()

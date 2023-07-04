@@ -12,9 +12,10 @@ while(True):
     else:
         print(f"#{name}#, вы лжете - в наше время столько не живут...")
     res=input("Желаете выйти? (Д/Y)")
-    if res=="Д" or res=="Д".lower():
+    #if res=="Д" or res=="Д".lower():
+    if res.upper()=="Д" or res.upper()=="Y":
         break
-    elif res=="Y" or res=="Y".lower():
-        continue
+    #elif res=="Y" or res=="Y".lower():
+        #continue
     else:
         print("непонятный текст")
