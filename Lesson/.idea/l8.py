@@ -17,6 +17,6 @@ while True:
         choose(a)
         break
     else:
-        print("это не число")
-        continue
+        print("Это не число")
+
 
