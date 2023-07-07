@@ -21,7 +21,6 @@ print("sum of cubs=",sum)
 
 n = int(n)
 sum=0
-b=0
 i = 1
 while i <= n:
     if i%3!=0:
