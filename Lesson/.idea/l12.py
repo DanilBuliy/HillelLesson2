@@ -2,3 +2,4 @@ inputdata = ['Страна', 'шалаш', 'Летел', 'вертолёт', 'У
 
 inputdata2=list(filter(lambda x:x if x[::-1].lower()==x.lower() else "",inputdata))
 print(inputdata2)
+
