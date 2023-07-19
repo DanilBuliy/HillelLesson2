@@ -34,6 +34,6 @@ def count():
         print("Такого варианта нет =(")
 
 count()
-print("-"*105)
+print("-"*100)
 
 
