@@ -12,3 +12,4 @@ import json
 
 f=open("dict1.json","w")
 json.dump(dict1,f,indent=1)
+f.close()
