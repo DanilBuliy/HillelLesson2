@@ -14,4 +14,5 @@ with open("dict1.csv", "w", encoding="utf-8") as f1:
     numb = [random.randint(900000, 10000000) for i in range(len(data))]
 
     for i, y in data.items():
-        wr.writerow([i, *y, f"{pre[random.randint(1, len(pre))]}{numb.pop()}"])
+        wr.writerow([i, *y, f"{pre[random.randint(1, len(pre)+1)]}{numb.pop()}"])
+
