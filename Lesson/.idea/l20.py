@@ -26,8 +26,8 @@ o.birthday()
 
 class Truck(Auto):
 
-    def __init__(self,max_load,brand,mark,age,color="black",weight="2.5t"):
-        super().__init__(brand,mark,age,color="black",weight="2.5t")
+    def __init__(self,max_load,brand,mark,age,color="blue",weight="3.5t"):
+        super().__init__(brand,mark,age,color,weight)
         self.maxl = max_load
 
     def move(self):
@@ -42,8 +42,8 @@ class Truck(Auto):
 
 class Car(Auto):
 
-    def __init__(self, max_speed,brand,mark,age,color="black",weight="2.5t"):
-        super().__init__(brand, mark, age, color="black", weight="2.5t")
+    def __init__(self, max_speed,brand,mark,age,color="yellow",weight="1.5t"):
+        super().__init__(brand, mark, age, color, weight)
         self.maxs = max_speed
 
     def move(self):
@@ -58,6 +58,8 @@ obj.load()
 obj1=Truck(40000,"Sport","Lanos",30)
 print("obj1 is",end=" ")
 obj1.stop()
+print("The color is",obj1.color)
+print(obj1.weight)
 
 print("obj1 is",end=" ")
 obj1.load()
@@ -65,6 +67,8 @@ obj1.load()
 ###Класс Car#####
 obj2=Car(400,"Classic","Audi",10)
 obj2.move()
+print("The color is",obj2.color)
+print(obj2.weight)
 
 obj3=Car(340,"Sport++","Shevrolet Comaro",30)
 obj3.move()
