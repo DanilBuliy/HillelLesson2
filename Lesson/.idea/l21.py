@@ -1,31 +1,24 @@
 class String(str):
-
     def __add__(self, other):
-        result=str(self)+str(other)
-        print(result)
-        return result
-
+        return String(str(self) + str(other))
 
     def __sub__(self, other):
-        res=self.replace(str(other), '')
-        print(res)
-        return res
+        return String(str(self).replace(str(other), '',1))
 
-String('New') + String(890)
-String(1234) + 5678
-String('New') + 'castle'
-String('New') + 77
-String('New') + True
-String('New') + ['s', ' ', 23]
-String('New') + None
+# Test for addition
+print(String('New') + String(890))
+print(String(1234) + 5678)
+print(String('New') + 'castle')
+print(String('New') + 77)
+print(String('New') + True)
+print(String('New') + ['s', ' ', 23])
+print(String('New') + None)
 
-print("-"*50)
-
-String('New bala7nce') - 7
-String('New balance') - 'bal'
-String('New balance') - 'Bal'
-String('pineapple apple pine') - 'apple'
-String('New balance') - 'apple'
-String('NoneType') - None
-String(55678345672) - 7
-
+# Test for subtraction
+print(String('New bala7nce') - 7)
+print(String('New balance') - 'bal')
+print(String('New balance') - 'Bal')
+print(String('pineapple apple pine') - 'apple')
+print(String('New balance') - 'apple')
+print(String('NoneType') - None)
+print(type(String(55678345672) - 7))
