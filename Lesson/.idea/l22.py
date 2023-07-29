@@ -41,7 +41,9 @@ class Circle(Point):
         return Circle(radius, x, y)
     def __sub__(self, other):
         if self.radius == other.radius:
-            return f"Point{Point(self.x, self.y)}"
+            x=self.x-other.x
+            y=self.y-other.y
+            return f"Point{Point(abs(x), abs(y))}"
         return abs(self.radius-other.radius)
 
     def edge_distance_from_origin(self):
