@@ -3,6 +3,7 @@ from vuvod import *
 from search import *
 from savetojson import *
 from readjson import *
+
 def main():
     while True:
         print("1. Ввести новую запись (очищается БД)")
