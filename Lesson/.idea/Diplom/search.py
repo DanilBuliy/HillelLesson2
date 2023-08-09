@@ -25,8 +25,6 @@ def searchfunc():
                         found = True
                         break
 
-
-
             if not found:
                 print("Запись не найдена")
 
